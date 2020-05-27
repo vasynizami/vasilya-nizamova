@@ -1,20 +1,29 @@
 import React from "react";
 import Hero from "../img/Hero.jpg";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
-function Title() {
+function Title({ id }) {
   return (
-    <div className="title"
+    <div
+      className="title"
       style={{
         backgroundImage: "url(" + Hero + ")",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div>
+      <div id={id}>
         <h1>Vasilya Nizamova</h1>
         <p>full-stack developer</p>
-        <Link to="#">View my work</Link>
+        <Link
+          to="portfolio"
+          spy={true}
+          smooth={true}
+          offset={-10}
+          duration={900}
+        >
+          View my work
+        </Link>
       </div>
     </div>
   );

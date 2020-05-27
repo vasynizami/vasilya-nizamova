@@ -1,51 +1,173 @@
-.App {
-  text-align: center;
-}
+/* TITLE STYLING */
 
-.title, .about, .portfolio, .contact {
-  height: 100vh;
-  width: 100%;
+.title {
   background-attachment: fixed;
+  text-align: center;
+  height: 100vh;
 }
 
 .title h1 {
-  padding-top: 35vh;
+  padding-top: 36vh;
+  font-size: 48px;
+  margin-bottom: 3px;
 }
 
-.about, .portfolio, .footer {
-  background-color: #4E6E91;
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
+
+.title a {
+  font-family: 'Helvetica Neue Thin';
+  font-size: 22px;
+  text-transform: lowercase;
+  background-color: rgba(105, 105, 105, 0.4);
+  border-radius: 5px;
+  padding: 2px 10px 5px 10px;
+}
+
+
+.about,
+.portfolio,
+.footer {
+  background-color: #4e6e91;
+}
+
+/* ABOUT STYLING */
+
+.about {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+#my-photo {
+  height: auto;
+  width: 280px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  align-content: center;
+}
+
+.logos img {
+  height: 80px;
+  width: auto;
+  margin: 20px;
+}
+
+.logos img:nth-child(2) {
+  height: 85px;
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.bio p {
+  font-size: 20px;
+  font-family: "Helvetica Neue Thin";
+}
+
+/* PORTFOLIO STYLING */
 
 .portfolio {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
   flex-wrap: wrap;
+  padding-bottom: 60px;
 }
 
-.portfolio img {
-  width: 400px;
+.project-container {
+  position: relative;
+  margin: 20px;
+}
+
+.project-container img {
+  max-width: 500px;
   height: auto;
-  margin-right: 20px;
+}
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(105, 105, 105, 0.9);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: opacity 0.5s cubic-bezier(0.75, -0.01, 0.2, 1);
+}
+
+.overlay h4 {
+  text-align: center;
+  margin-top: 27%;
+  font-family: 'Abel';
+  font-size: 32px;
+}
+
+.project-container:hover .overlay {
+  opacity: 1;
+}
+
+
+/* CONTACT STYLING */
+
+.contact {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 form {
+  background-color: rgba(243, 225, 220, 0.5);
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  margin: 40px auto 20px auto;
+  padding: 30px;
+  border-radius: 15px;
+  -webkit-box-shadow: 13px 13px 41px 3px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 13px 13px 41px 3px rgba(0, 0, 0, 0.54);
+  box-shadow: 13px 13px 41px 3px rgba(0, 0, 0, 0.54);
 }
 
-input, textarea {
+input,
+textarea {
   font-size: 14px;
-  border: 0.5px solid lightgrey;
-  border-radius: 5px;
+  border: none;
+  /* border: 0.5px solid rgba(243, 225, 220, 0.5); */
   margin: 10px auto;
-  color: #2D341E !important;
-  background:white !important;
+  color: #2d341e !important;
+  background: white !important;
   padding: 2px 10px;
 }
 
-input:focus, button:focus, textarea:focus {
+input{
+  border-radius: 5px;
+}
+
+textarea {
+  border-radius: 9px;
+}
+
+input:focus,
+button:focus,
+textarea:focus {
   outline: none;
 }
 
@@ -61,6 +183,9 @@ button {
   letter-spacing: 1px;
 }
 
+
+/* FOOTER STYLING */
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -70,6 +195,156 @@ button {
 
 .footer img {
   margin-right: 15px;
-  width: 50px;
+  width: 40px;
   height: auto;
 }
+
+/* PROJECT PAGE STYLING */
+
+.projects {
+  text-align: center;
+  margin: 0 auto 40px auto;
+}
+
+.projects h1 {
+  font-family: "Abel";
+  font-size: 48px;
+}
+
+.snapshot-and-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-snap {
+  max-width: 660px;
+  height: auto;
+  border-radius: 15px;
+  -webkit-box-shadow: 13px 13px 41px 3px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 13px 13px 41px 3px rgba(0, 0, 0, 0.54);
+  box-shadow: 13px 13px 41px 3px rgba(0, 0, 0, 0.54);
+  margin-bottom: 40px;
+}
+
+.icons {
+  width: 30px;
+  margin-right: 20px;
+}
+
+.projects p {
+  font-size: 20px;
+  font-family: 'Helvetica Neue Thin';
+}
+
+.description {
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen  
+  and (max-device-width: 1090px) {
+    .project-container img {
+      max-width: 400px;
+    }
+  }
+
+  @media only screen  
+  and (max-device-width: 770px) {
+    .project-container img {
+      max-width: 300px;
+    }
+
+    .about {
+      padding-bottom: 20px;
+    }
+
+    #my-photo {
+      width: 240px;
+      margin-top: 40px;
+    }
+
+    .portfolio {
+      flex-direction: column;
+      padding-bottom: 20px;
+    }
+
+    .project-container img {
+      max-width: 500px;
+    }
+  }
+
+  @media only screen  
+  and (max-device-width: 500px) {
+    .title h1 {
+      font-size: 42px;
+    }
+    
+    .about {
+      flex-direction: column-reverse;
+    }
+
+    .logos img {
+      height: 60px;
+      margin: 10px;
+    }
+    
+    .logos img:nth-child(2) {
+      height: 65px;
+    }
+    
+    .project-container img {
+      max-width: 250px;
+    }
+
+    form {
+      margin: 20px auto 20px auto;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    form h1 {
+      display:none;
+    }
+
+    input,
+    textarea {
+      font-size: 12px;
+    }
+    
+    textarea {
+      max-width: 300px;
+    }
+
+    button {
+      width: 80px;
+      font-size: 9px;
+      padding: 5px 10px;
+    }
+
+    .projects {
+      margin: 0 auto 10px auto;
+    }
+
+    .projects h1 {
+      font-size: 34px;
+    }
+    
+    .site-snap {
+      max-width: 340px;
+      margin-bottom: 50px;
+    }
+    
+    .icons {
+      width: 20px;
+      margin-right: 10px;
+    }
+    
+    .description {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+    
+  }
