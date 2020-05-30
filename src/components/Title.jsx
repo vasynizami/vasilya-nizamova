@@ -1,29 +1,12 @@
 import React from "react";
-import Hero from "../img/Hero.jpg";
-import { Link } from "react-scroll";
+import Logo from '../img/my-logo.png';
 
-function Title({ id }) {
+function Title() {
   return (
-    <div
-      className="title"
-      style={{
-        backgroundImage: "url(" + Hero + ")",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <div id={id}>
-        <h1>Vasilya Nizamova</h1>
-        <p>full-stack developer</p>
-        <Link
-          to="portfolio"
-          spy={true}
-          smooth={true}
-          offset={-10}
-          duration={900}
-        >
-          View my work
-        </Link>
+    <div className="title">
+      <div className="intro">
+        <img src={Logo}/>
+        <p>vasilya nizamova | full-stack developer</p>
       </div>
     </div>
   );

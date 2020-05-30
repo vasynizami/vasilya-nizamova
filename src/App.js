@@ -1,41 +1,21 @@
 import React from 'react';
 import './App.css';
-import { Route } from 'react-router-dom';
-import Main from './components/Main';
-import ProjectTwo from './components/Projects/ProjectTwo';
-import ProjectFour from './components/Projects/ProjectFour';
-import ProjectFive from './components/Projects/ProjectFive';
-import ProjectSix from './components/Projects/ProjectSix';
+import Nav from './components/Nav';
+import Title from './components/Title';
+// import About from './components/About';
+import Portfolio from './components/Portfolio';
+// import Footer from './components/Footer';
 
 function App() {
     return (
-      <div>
-        <Route
-          exact path="/"
-          component={Main}
-        />
-      
-        <Route
-          path="/project2"
-          component={ProjectTwo}
-        />
-        
-        <Route
-          path="/project4"
-          component={ProjectFour}
-        />
-
-        <Route
-          path="/project5"
-          component={ProjectFive}
-        />
-
-        <Route
-          path="/project6"
-          component={ProjectSix}
-        />
+      <div className="app">
+        <Nav/>
+        <Title id="title"/>
+        {/* <About id="portfolio"/> */}
+        <Portfolio id="portfolio" />
+        {/* <Footer/> */}
       </div>
     );
   }
   
-  export default App;
+export default App;

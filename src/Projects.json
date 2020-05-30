@@ -1,0 +1,38 @@
+{
+  "Project1": {
+    "name": "Escape NYC",
+    "imgHor": "escapenyc.png",
+    "imgVer": "",
+    "githubUrl": "https://github.com/vasynizami/escape_nyc",
+    "url": "http://escapenyc333.surge.sh/",
+    "description": "A front-end web app that displays the cheapest flights to the destination defined by the search input as well as current weather conditions in NYC in the side menu widget.",
+    "technologies": "HTML, CSS, JavaScript, third party APIs, Surge"
+  },
+  "Project2": {
+    "name": "My Recipe Book",
+    "imgHor": "my-rec-book-hor.png",
+    "imgVer": "my-recipe-book.png",
+    "githubUrl": "https://github.com/vasynizami/my-recipe-book",
+    "url": "http://my-recipebook.surge.sh/",
+    "description": "A full-stack web app demonstrating full CRUD functionality. The user can create an account, add/edit/delete recipes, and view recipes created by other users.",
+    "technologies": "CSS, React, Mongoose, MongoDB, Express, bcrypt, JWT, MongoDB Atlas, Heroku, Surge"
+  },
+  "Project3": {
+    "name": "Al Di La Trattoria",
+    "imgHor": "al-di-la-hor.png",
+    "imgVer": "al-di-la.png",
+    "githubUrl": "https://github.com/vasynizami/ux-al-di-la",
+    "url": "https://romantic-lichterman-1050bf.netlify.app/",
+    "description": "A front-end website for a Brooklyn-based Italian restaurant. The project is made in collaboration with the UX team.",
+    "technologies": "CSS, React, React Router, Netlify"
+  },
+  "Project4": {
+    "name": "Fresh Cucumbers",
+    "imgHor": "fresh-cucumbers.png",
+    "imgVer": "",
+    "githubUrl": "https://github.com/vasynizami/fresh-cucumbers",
+    "url": "http://fresh-cucumbers.surge.sh/",
+    "description": "A full-stack web app demonstrating full CRUD functionality. The user can create an account, add/edit/delete movie reviews, and view the reviews created by other users.",
+    "technologies": "CSS, React, React Router, Ruby on Rails, bcrypt, JWT, Heroku, Surge"
+  }
+}
