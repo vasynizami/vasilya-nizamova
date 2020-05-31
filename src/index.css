@@ -3,8 +3,7 @@
 }
 
 body {
-  font-family: 'Helvetica Neue Thin',
-    sans-serif;
+  font-family: 'Helvetica Neue Thin', 'Merriweather', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -25,6 +24,6 @@ body {
 }
 
 @font-face {
-  font-family: 'Abel';
-  src: local('Abel'), url(./fonts/abel-regular.ttf) format('truetype');
+  font-family: 'Merriweather';
+  src: local('Merriweather-Light'), url(./fonts/Merriweather-Light.ttf) format('truetype');
 }
