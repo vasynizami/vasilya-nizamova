@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import Projects from "../Projects.json";
 import ProjectCard from "./ProjectCard";
 import bG1 from "../img/project-background.jpg";
 import bG2 from "../img/project-background2.jpg";

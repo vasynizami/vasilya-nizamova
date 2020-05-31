@@ -113,7 +113,7 @@ a {
 .overlay {
   opacity: 1;
   position: absolute;
-  background-color:rgba(211,211,211, 0.9);
+  background-color: rgba(211, 211, 211, 0.9);
   width: 100%;
   height: 100%;
   left: 0;
@@ -121,16 +121,11 @@ a {
   transition: opacity 0.5s cubic-bezier(0.75, -0.01, 0.2, 1);
   font-family: "Merriweather";
   font-size: 30px;
-  /* text-align: center; */
   /* flexbox for h4 inside */
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* 
-.overlay h4 {
-  margin-top: 130px;
-} */
 
 #project1:hover .overlay {
   opacity: 0;
@@ -199,4 +194,52 @@ a {
 
 .project-links a:nth-child(1) {
   margin-right: 50px;
+}
+
+@media (max-width: 950px) {
+  .portfolio {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+  }
+  .grid-container {
+    margin: 15px;
+  }
+  .image {
+    height: 20vh;
+  }
+  .project-card{
+    margin: 15px;
+    align-self: center;
+  }
+  .project {
+    margin: 10px;
+    padding: 15px;
+    /* flex-direction: row; */
+  }
+  .project h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  .description p {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  #site-snap {
+    max-width: 340px;
+  }
+  .project-links {
+    margin-top: 10px;
+  }
+  .project-details {
+    /* flex-direction: row; */
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .description-links {
+    text-align: center;
+    padding: 20px;
+  }
 }

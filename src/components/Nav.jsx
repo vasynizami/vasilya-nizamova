@@ -33,7 +33,7 @@ function Nav({ id }) {
         <a href="https://github.com/vasynizami" target="_blank">
           github
         </a>
-        <a href="#">mail</a>
+        <a href="mailto:victoriartz89@gmail.com" target="_blank" rel="noopener noreferrer">e-mail</a>
       </div>
     </div>
   );

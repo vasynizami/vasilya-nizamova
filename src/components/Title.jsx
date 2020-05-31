@@ -5,7 +5,7 @@ function Title() {
   return (
     <div className="title">
       <div className="intro">
-        <img src={Logo}/>
+        <img src={Logo} alt="logo"/>
         <p>vasilya nizamova | full-stack developer</p>
       </div>
     </div>
