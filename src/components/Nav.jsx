@@ -16,6 +16,15 @@ function Nav({ id }) {
           home
         </Link>
         <Link
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={20}
+          duration={900}
+        >
+          about
+        </Link>
+        <Link
           to="portfolio"
           spy={true}
           smooth={true}

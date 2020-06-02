@@ -1,35 +1,28 @@
 import React from "react";
-// import HtmlLogo from "../img/logo-html5.svg";
-// import CssLogo from "../img/logo-css3.svg";
-// // import BootstrapLogo from "../img/bootstrap.svg";
-// import JSLogo from "../img/logo-js.svg";
-// import JQLogo from "../img/jquery.svg";
-// import GitLogo from "../img/git1.svg";
-// import NodeJSLogo from "../img/logo-nodejs.svg";
-// import ReactLogo from "../img/logo-react.svg";
-// import RubyLogo from "../img/ruby.svg";
-// import PostgresLogo from "../img/postgresql.svg";
-// import RailsLogo from "../img/rail.svg";
-// import MongoLogo from "../img/leaf-outline.svg";
-import Photo from "../img/me8.jpg";
+import Photo from "../img/me.jpg";
 
 function About() {
   return (
     <div className="about">
+        <img id="photo" src={Photo}></img>
       <div className="bio">
-        <h2>Hello!</h2>
         <p>
-          My name is Vasilya and I am a NYC-based full-stack developer with a
-          knack for visual aesthetics. I focus on writing clean, elegant and
+          I'm Vasilya Nizamova, a NYC-based full-stack developer with a
+          knack for visual aesthetics. I focus on writing a clean, elegant, and
           efficient code.
         </p>
-        <img id="photo" src={Photo}></img>
+        <h4>
+          Technologies I use: 
+        </h4>
+        <p>
+          HTML, CSS, Bootstrap, JavaScript, React, NodeJS, MongoDB, Express JS, Mongoose, PostgreSQL, Ruby, Ruby on Rails
+        </p>
       </div>
-      <div className="technologies">
+      {/* <div className="technologies">
         <div className="parallelogram">
           <p>HTML</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
