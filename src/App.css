@@ -1,6 +1,7 @@
 .app {
   background-color: #ffeddf;
   color: #4e6e91;
+  padding: 5px;
 }
 
 .title,
@@ -15,14 +16,19 @@ a {
   cursor: pointer;
 }
 
+a:focus {
+  outline: none;
+}
+
 /* TITLE */
+
 .title {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
 }
 
-.title img {
+#logo {
   height: 80px;
   width: auto;
   margin-bottom: 5px;
@@ -59,38 +65,41 @@ a {
   align-items: center;
 }
 
+/* DROPDOWNLOGO*/
+
+.nav-toggle {
+  display: none;
+}
+
 /* ABOUT */
 
 .about {
   padding: 10px;
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
-  text-align: center;
+  align-items: center;
 }
 
 .bio {
-  max-width: 600px;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 500px;
+  margin-right: 20px;
 }
 
 #photo {
-  max-width: 180px;
+  max-width: 280px;
   height: auto;
-  margin: 18vh auto 20px auto;
   border-radius: 3px;
 }
 
 .about p {
-  margin-top: 10px;
-  font-size: 20px;
+  margin-bottom: 15px;
+  font-size: 24px;
 }
 
 .about h4 {
-  margin-top: 20px;
-  font-size: 24px;
-  font-family: 'Merriweather';
+  margin-top: 50px;
+  font-size: 28px;
+  font-family: "Merriweather";
 }
 
 /* PORTFOLIO */
@@ -189,6 +198,7 @@ a {
 }
 
 /* PROJECT */
+
 .project {
   margin: 45px;
   padding: 15px;
@@ -201,6 +211,7 @@ a {
 
 .project h1 {
   margin-bottom: 20px;
+  font-family: "Helvetica Neue";
 }
 
 #site-snap {
@@ -209,7 +220,7 @@ a {
   border-radius: 2px;
 }
 
-.description {
+.description-links {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
@@ -217,6 +228,7 @@ a {
 
 .description h2 {
   margin-bottom: 10px;
+  font-family: "Merriweather";
 }
 
 .description p {
@@ -232,6 +244,13 @@ a {
 }
 
 @media (max-width: 950px) {
+  .links {
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .links a {
+    font-size: 14px;
+  }
   .portfolio {
     flex-direction: column;
     justify-content: center;
@@ -244,14 +263,13 @@ a {
   .image {
     height: 20vh;
   }
-  .project-card{
+  .project-card {
     margin: 15px;
     align-self: center;
   }
   .project {
     margin: 10px;
     padding: 15px;
-    /* flex-direction: row; */
   }
   .project h1 {
     margin-bottom: 10px;
@@ -268,7 +286,6 @@ a {
     margin-top: 10px;
   }
   .project-details {
-    /* flex-direction: row; */
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -276,5 +293,108 @@ a {
   .description-links {
     text-align: center;
     padding: 20px;
+  }
+}
+
+@media (max-width: 770px) {
+  .about {
+    flex-direction: column-reverse;
+    /* justify-content: center; */
+  }
+  #photo {
+    margin-bottom: 30px;
+  }
+  .bio {
+    text-align: center;
+  }
+}
+
+@media (max-width: 415px) {
+  .app {
+    padding-bottom: 60px;
+  }
+  .intro {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+  .nav-toggle {
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 40px;
+  }
+  .nav-toggle img {
+    height: 60px;
+    width: auto;
+  }
+  .nav-toggle p {
+    margin-top: 20px;
+    margin-left: 25px;
+    font-size: 18px;
+  }
+  .about {
+    margin-top: -70px;
+  }
+  #photo {
+    max-width: 200px;
+  }
+  .about p {
+    font-size: 18px;
+  }
+  .about h4 {
+    font-size: 24px;
+  }
+  .title, 
+  .portfolio {
+    height: auto;
+  }
+  .portfolio {
+    margin-top: -100px;
+  }
+  .grid-container {
+    margin: 10px;
+    flex: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  #project1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  #project2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  #project3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  #project4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .project-card {
+    margin: 10px;
+  }
+  .project {
+    margin: 0px;
+    padding: 10px;
+  }
+  .project-details {
+    flex-direction: column;
+    align-items: center;
   }
 }
