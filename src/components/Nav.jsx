@@ -33,34 +33,7 @@ function Nav({ id }) {
         >
           work
         </Link>
-        {/* <Link
-          id="logo-nav"
-        >
-          <img src={Logo} alt="navigation for mobile view"/>
-        </Link> */}
-        {/* <Link
-          className="arrow"
-          id="arrow-first"
-          to="about"
-          spy={true}
-          smooth={true}
-          offset={20}
-          duration={900}
-        >
-          <img src={Arrow} alt="navigation"/>
-        </Link>
-        <Link
-          className="arrow"
-          id="arrow-second"
-          to="portfolio"
-          spy={true}
-          smooth={true}
-          offset={20}
-          duration={900}
-        >
-          <img src={Arrow} alt="navigation"/>
-        </Link> */}
-        <a href="https://docdro.id/jpzcvsT" target="_blank">
+        <a href="https://www.docdroid.net/SAUbKj8/vasilya-nizamova-resume-pdf" target="_blank">
           resume
         </a>
         <a href="http://www.linkedin.com/in/vasilya-nizamova" target="_blank">
