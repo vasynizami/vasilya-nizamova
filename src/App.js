@@ -4,7 +4,6 @@ import Nav from './components/Nav';
 import Title from './components/Title';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
-// import Footer from './components/Footer';
 
 function App() {
     return (
@@ -13,7 +12,6 @@ function App() {
         <Title id="title"/>
         <About id="about"/>
         <Portfolio id="portfolio" />
-        {/* <Footer/> */}
       </div>
     );
   }
