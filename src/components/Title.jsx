@@ -1,29 +1,24 @@
-import React from "react";
-import Hero from "../img/Hero.jpg";
-import { Link } from "react-scroll";
+import React, { useState, useRef } from "react";
+import Logo from "../img/my-logo.png";
+import { useOnClickOutside } from "../hooks";
+import DropDownLogo from "../components/DropDownLogo";
+import DropDownNav from "../components/DropDownNav";
 
-function Title({ id }) {
+function Title() {
+  
+  const [open, setOpen] = useState(false);
+  const node = useRef();
+  useOnClickOutside(node, () => setOpen(false));
+
   return (
-    <div
-      className="title"
-      style={{
-        backgroundImage: "url(" + Hero + ")",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <div id={id}>
-        <h1>Vasilya Nizamova</h1>
-        <p>full-stack developer</p>
-        <Link
-          to="portfolio"
-          spy={true}
-          smooth={true}
-          offset={-10}
-          duration={900}
-        >
-          View my work
-        </Link>
+    <div className="title">
+      <div ref={node}>
+        <DropDownLogo open={open} setOpen={setOpen}/>
+        <DropDownNav open={open}/>
+      </div>
+      <div className="intro">
+        <img src={Logo} alt="logo" id="logo" />
+        <p>vasilya nizamova | full-stack developer</p>
       </div>
     </div>
   );

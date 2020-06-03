@@ -1,48 +1,82 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import Project2 from "../img/escapenyc.png";
-import Project4 from "../img/my-recipe-book.png";
-import Project5 from "../img/al-di-la.png";
-import Project6 from "../img/fresh-cucumbers.png";
+import ProjectCard from "./ProjectCard";
+import bG1 from "../img/project-background.jpg";
+import bG2 from "../img/project-background2.jpg";
+import bG3 from "../img/project-background3.jpg";
+import bG4 from "../img/project-background4.jpg";
 
-class Portfolio extends Component {
-  render() {
+export default function Portfolio() {
+
     return (
       <div className="portfolio">
-        <Link to="/project2">
-          <div className="project-container">
-            <div className="overlay">
-              <h4>Escape NYC</h4>
+        <div className="grid-container">
+          <Link id="project1" to="/project1" className="area">
+            <div
+              className="image"
+              style={{
+                backgroundImage: "url(" + bG1 + ")",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                width: "auto",
+                minHeight: "100%",
+              }}
+            >
+              <div className="overlay">
+                <h4>I</h4>
+              </div>
             </div>
-            <img src={Project2} />
-          </div>
-        </Link>
-        <Link to="/project4">
-          <div className="project-container">
-            <div className="overlay">
-              <h4>My Recipe Book</h4>
+          </Link>
+          <Link id="project2" to="/project2" className="area">
+            <div
+              className="image"
+              style={{
+                backgroundImage: "url(" + bG2 + ")",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                width: "auto",
+                minHeight: "100%",
+              }}
+            >
+              <div className="overlay">
+                <h4>II</h4>
+              </div>
             </div>
-            <img src={Project4} />
-          </div>
-        </Link>
-        <Link to="/project5">
-          <div className="project-container">
-            <div className="overlay">
-              <h4>Al Di La Trattoria</h4>
+          </Link>
+          <Link id="project3" to="/project3" className="area">
+            <div
+              className="image"
+              style={{
+                backgroundImage: "url(" + bG3 + ")",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                width: "auto",
+                minHeight: "100%",
+              }}
+            >
+              <div className="overlay">
+                <h4>III</h4>
+              </div>
             </div>
-            <img src={Project5} />
-          </div>
-        </Link>
-        <Link to="/project6">
-          <div className="project-container">
-            <div className="overlay">
-              <h4>Fresh Cucumbers</h4>
+          </Link>
+          <Link id="project4" to="/project4" className="area">
+            <div
+              className="image"
+              style={{
+                backgroundImage: "url(" + bG4 + ")",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                width: "auto",
+                minHeight: "100%",
+              }}
+            >
+              <div className="overlay">
+                <h4>IV</h4>
+              </div>
             </div>
-            <img src={Project6} />
-          </div>
-        </Link>
+          </Link>
+        </div>
+        <ProjectCard />
       </div>
     );
-  }
-}
-export default Portfolio;
+};
