@@ -164,7 +164,7 @@ a:focus {
   top: 0;
   transition: opacity 0.5s cubic-bezier(0.75, -0.01, 0.2, 1);
   font-family: "Merriweather";
-  font-size: 30px;
+  font-size: 24px;
   /* flexbox for h4 inside */
   display: flex;
   justify-content: center;
@@ -172,19 +172,31 @@ a:focus {
 }
 
 #project1:hover .overlay {
-  opacity: 0;
+  opacity: 0.5;
+}
+#project1:hover .overlay h4 {
+  border-bottom: 3px solid;
 }
 
 #project2:hover .overlay {
-  opacity: 0;
+  opacity: 0.5;
+}
+#project2:hover .overlay h4 {
+  border-bottom: 3px solid;
 }
 
 #project3:hover .overlay {
-  opacity: 0;
+  opacity: 0.5;
+}
+#project3:hover .overlay h4 {
+  border-bottom: 3px solid;
 }
 
 #project4:hover .overlay {
-  opacity: 0;
+  opacity: 0.5;
+}
+#project4:hover .overlay h4 {
+  border-bottom: 3px solid;
 }
 
 .project-card {

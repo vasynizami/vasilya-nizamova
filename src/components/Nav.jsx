@@ -1,17 +1,19 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function Nav({ id }) {
+
+  //regular Link attr didn't work to scroll back up to Title component, so i used .scrollToTop
+  const scrollToTop = () => {
+    scroll.scrollToTop()
+  };
+
   return (
     <div id={id} className="nav">
       {/* here we need a separate div to make the fixed .nav centered*/}
       <div className="links">
-      <Link
-          to="title"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={900}
+        <Link
+          onClick={scrollToTop}
         >
           home
         </Link>

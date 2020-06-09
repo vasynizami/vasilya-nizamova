@@ -8,7 +8,7 @@ import bG4 from "../img/project-background4.jpg";
 
 export default function Portfolio() {
 
-    return (
+  return (
       <div className="portfolio">
         <div className="grid-container">
           <Link id="project1" to="/project1" className="area">
@@ -23,7 +23,7 @@ export default function Portfolio() {
               }}
             >
               <div className="overlay">
-                <h4>I</h4>
+                <h4>Project I</h4>
               </div>
             </div>
           </Link>
@@ -39,7 +39,7 @@ export default function Portfolio() {
               }}
             >
               <div className="overlay">
-                <h4>II</h4>
+                <h4>Project II</h4>
               </div>
             </div>
           </Link>
@@ -55,7 +55,7 @@ export default function Portfolio() {
               }}
             >
               <div className="overlay">
-                <h4>III</h4>
+                <h4>Project III</h4>
               </div>
             </div>
           </Link>
@@ -71,7 +71,7 @@ export default function Portfolio() {
               }}
             >
               <div className="overlay">
-                <h4>IV</h4>
+                <h4>Project IV</h4>
               </div>
             </div>
           </Link>
