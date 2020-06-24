@@ -35,7 +35,7 @@ function Nav({ id }) {
         >
           work
         </Link>
-        <a href="https://www.docdroid.net/e1X1Gf2/nizamova-full-stack-pdf" target="_blank">
+        <a href="https://www.docdroid.net/mFrHMZZ/nizamova-resume-pdf" target="_blank">
           resume
         </a>
         <a href="http://www.linkedin.com/in/vasilya-nizamova" target="_blank">
@@ -44,7 +44,7 @@ function Nav({ id }) {
         <a href="https://github.com/vasynizami" target="_blank">
           github
         </a>
-        <a href="mailto:victoriartz89@gmail.com" target="_blank" rel="noopener noreferrer">e-mail</a>
+        <a href="mailto:vasilya.nizami@gmail.com" target="_blank" rel="noopener noreferrer">e-mail</a>
       </div>
     </div>
   );
