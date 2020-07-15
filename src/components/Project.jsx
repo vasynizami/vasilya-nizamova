@@ -1,14 +1,9 @@
 import React from "react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 export default function Project(props) {
   return (
-    <motion.div
-      className="project"
-      animate={{ opacity: 1 }}
-      initial={{ opacity: 0 }}
-      transition={{ ease: "easeIn", duration: 1 }}
-    >
+    <div className="project">
       <h1>{props.project.name}</h1>
       <div className="project-details">
         <img
@@ -32,6 +27,6 @@ export default function Project(props) {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }

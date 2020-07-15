@@ -29,18 +29,22 @@ class Portfolio extends Component {
     return (
       <div className="portfolio">
         <button
-          onClick={() => this.nextProject()}
-          disabled={project.index === Projects.length - 1}
-        >
-          Next
-        </button>
-        <button
           onClick={() => this.prevProject()}
           disabled={project.index === 0}
         >
           Prev
         </button>
-        <Project project={project} />
+        <button
+          onClick={() => this.nextProject()}
+          disabled={project.index === Projects.length - 1}
+        >
+          Next
+        </button>
+        <div className="slider">
+          <div className="slider-wrapper">
+              <Project project={project} />
+          </div>
+        </div>
       </div>
     )
   }

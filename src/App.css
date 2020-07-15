@@ -106,107 +106,9 @@ a:focus {
 
 .portfolio {
   padding: 20px 10px;
-  display: flex;
+  /* display: flex;
   justify-content: stretch;
-  align-items: center;
-}
-
-.grid-container {
-  /* so that grid cont & project card divide the space equally btw each other */
-  flex: 1 1 0px;
-  align-self: stretch;
-  margin: 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 15px;
-}
-
-#project1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  position: relative;
-}
-
-#project2 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  position: relative;
-}
-
-#project3 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  position: relative;
-}
-
-#project4 {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  position: relative;
-}
-
-.overlay {
-  opacity: 1;
-  position: absolute;
-  background-color: rgba(211, 211, 211, 0.9);
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  transition: opacity 0.5s cubic-bezier(0.75, -0.01, 0.2, 1);
-  font-family: "Merriweather";
-  font-size: 24px;
-  /* flexbox for h4 inside */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#project1:hover .overlay {
-  opacity: 0.5;
-}
-#project1:hover .overlay h4 {
-  border-bottom: 3px solid;
-}
-
-#project2:hover .overlay {
-  opacity: 0.5;
-}
-#project2:hover .overlay h4 {
-  border-bottom: 3px solid;
-}
-
-#project3:hover .overlay {
-  opacity: 0.5;
-}
-#project3:hover .overlay h4 {
-  border-bottom: 3px solid;
-}
-
-#project4:hover .overlay {
-  opacity: 0.5;
-}
-#project4:hover .overlay h4 {
-  border-bottom: 3px solid;
-}
-
-.project-card {
-  margin: 40px;
-  flex: 1 1 0px;
-  align-self: stretch;
-  /* flexbox for items inside project-card */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 /* PROJECT */
@@ -214,11 +116,11 @@ a:focus {
 .project {
   margin: 45px;
   padding: 15px;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   background-color: rgba(250, 250, 250, 0.95);
-  align-items: center;
-  flex-direction: column;
+  /* align-items: center;
+  flex-direction: column; */
 }
 
 .project h1 {
@@ -274,10 +176,6 @@ a:focus {
   }
   .image {
     height: 20vh;
-  }
-  .project-card {
-    margin: 15px;
-    align-self: center;
   }
   .project {
     margin: 10px;
@@ -365,41 +263,6 @@ a:focus {
   }
   .portfolio {
     margin-top: -100px;
-  }
-  .grid-container {
-    margin: 10px;
-    flex: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 10px;
-  }
-  #project1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  #project2 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  #project3 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  #project4 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  .project-card {
-    margin: 10px;
   }
   .project {
     margin: 0px;
