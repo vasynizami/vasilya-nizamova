@@ -1,5 +1,6 @@
-{
-  "Project1": {
+[
+  {
+    "index": 0,
     "name": "Escape NYC",
     "img": "escapenyc.png",
     "githubUrl": "https://github.com/vasynizami/escape_nyc",
@@ -7,7 +8,8 @@
     "description": "A front-end web app that displays the cheapest flights to the destination defined by the search input as well as current weather conditions in NYC in the side menu widget.",
     "technologies": "HTML, CSS, JavaScript, third party APIs, Surge"
   },
-  "Project2": {
+  {
+    "index": 1,
     "name": "My Recipe Book",
     "img": "my-rec-book.png",
     "githubUrl": "https://github.com/vasynizami/my-recipe-book",
@@ -15,7 +17,8 @@
     "description": "A full-stack web app developed in collaboration with 3 other software engineers. The app demonstrates full CRUD functionality – the user can create an account, add/edit/delete recipes, and view recipes created by other users.",
     "technologies": "CSS, React, Mongoose, MongoDB, Express, bcrypt, JWT, MongoDB Atlas, Heroku, Surge"
   },
-  "Project3": {
+  {
+    "index": 2,
     "name": "Al Di La Trattoria",
     "img": "al-di-la.png",
     "githubUrl": "https://github.com/vasynizami/ux-al-di-la",
@@ -23,7 +26,8 @@
     "description": "A front-end website for a Brooklyn-based Italian restaurant. The project is made in collaboration with the UX team.",
     "technologies": "CSS, React, React Router, Netlify"
   },
-  "Project4": {
+  {
+    "index": 3,
     "name": "Fresh Cucumbers",
     "img": "fresh-cucumbers.png",
     "githubUrl": "https://github.com/vasynizami/fresh-cucumbers",
@@ -31,4 +35,4 @@
     "description": "A full-stack web app demonstrating full CRUD functionality. The user can create an account, add/edit/delete movie reviews, and view the reviews created by other users.",
     "technologies": "CSS, React, React Router, Ruby on Rails, bcrypt, JWT, Heroku, Surge"
   }
-}
+]
