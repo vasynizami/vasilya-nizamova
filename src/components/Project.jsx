@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Project(props) {
   return (
-    <div className="project">
+    <div className="project-card" id={`card-${props.project.index}`}>
       <h1>{props.project.name}</h1>
       <div className="project-details">
         <img

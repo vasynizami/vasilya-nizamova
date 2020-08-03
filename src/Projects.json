@@ -1,5 +1,6 @@
 [
   {
+    "_id": 1,
     "index": 0,
     "name": "Escape NYC",
     "img": "escapenyc.png",
@@ -9,6 +10,7 @@
     "technologies": "HTML, CSS, JavaScript, third party APIs, Surge"
   },
   {
+    "_id": 2,
     "index": 1,
     "name": "My Recipe Book",
     "img": "my-rec-book.png",
@@ -18,6 +20,7 @@
     "technologies": "CSS, React, Mongoose, MongoDB, Express, bcrypt, JWT, MongoDB Atlas, Heroku, Surge"
   },
   {
+    "_id": 3,
     "index": 2,
     "name": "Al Di La Trattoria",
     "img": "al-di-la.png",
@@ -27,6 +30,7 @@
     "technologies": "CSS, React, React Router, Netlify"
   },
   {
+    "_id": 4,
     "index": 3,
     "name": "Fresh Cucumbers",
     "img": "fresh-cucumbers.png",

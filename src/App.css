@@ -106,26 +106,78 @@ a:focus {
 
 .portfolio {
   padding: 20px 10px;
-  /* display: flex;
-  justify-content: stretch;
-  align-items: center; */
 }
+
+.col {
+  height: 100%;
+  position: relative;
+}
+
+.slider {
+  position: relative;
+  max-width: 600px;
+  height: 70%;
+  padding: 20px;
+  margin: 0  auto;
+}
+
+.slider-wrapper {
+  display: flex;
+  position: absolute;
+  transition: transform 300ms ease-in-out;
+}
+
+/* border for active property */
+/* .slider:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* outline: 0px solid #6b4952; */
+  /* position: absolute;
+  top: 0;
+  left: 0;
+} */ 
+
 
 /* PROJECT */
 
-.project {
-  margin: 45px;
+.project-card {
+  /* margin: 45px; */
   padding: 15px;
-  /* display: flex;
-  justify-content: center; */
   background-color: rgba(250, 250, 250, 0.95);
-  /* align-items: center;
-  flex-direction: column; */
+  text-align: center;
+  margin: 0 auto;
+
+  /* style for appearance in the slider */
+  flex: 1;
+  min-width: 600px;
+  opacity: 0.5;
+  transform: scale(0.7);
+  transition: opacity 300ms linear, transform 300ms ease-in-out;
 }
 
-.project h1 {
+.slider.active-slide-0 #card-0 {
+  opacity: 1;
+  transform: scale(1);
+}
+.slider.active-slide-1 #card-1 {
+  opacity: 1;
+  transform: scale(1);
+}
+.slider.active-slide-2 #card-2 {
+  opacity: 1;
+  transform: scale(1);
+}
+.slider.active-slide-3 #card-3 {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.project-card h1 {
   margin-bottom: 20px;
   font-family: "Helvetica Neue";
+  font-size: 28px;
 }
 
 #site-snap {
@@ -143,6 +195,7 @@ a:focus {
 .description h2 {
   margin-bottom: 10px;
   font-family: "Merriweather";
+  font-size: 20px;
 }
 
 .description p {

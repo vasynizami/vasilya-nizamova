@@ -40,9 +40,16 @@ class Portfolio extends Component {
         >
           Next
         </button>
-        <div className="slider">
-          <div className="slider-wrapper">
-              <Project project={project} />
+
+        <div className="col">
+          <div className={`slider active-slide-${project.index}`}>
+            <div className="slider-wrapper" style={{
+                'transform': `translateX(-${project.index*(100/projects.length)}%)`
+              }}>
+                {
+                  projects.map(project => <Project key={project._id}  project={project} />)
+                }
+            </div>
           </div>
         </div>
       </div>
