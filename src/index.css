@@ -6,6 +6,7 @@ body {
   font-family: 'Helvetica Neue Thin', 'Merriweather', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 @font-face {
