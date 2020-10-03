@@ -12,18 +12,8 @@ function Nav({ id }) {
     <div id={id} className="nav">
       {/* here we need a separate div to make the fixed .nav centered*/}
       <div className="links">
-        <Link
-          onClick={scrollToTop}
-        >
-          home
-        </Link>
-        <Link
-          to="about"
-          spy={true}
-          smooth={true}
-          offset={20}
-          duration={900}
-        >
+        <Link onClick={scrollToTop}>home</Link>
+        <Link to="about" spy={true} smooth={true} offset={20} duration={900}>
           about
         </Link>
         <Link
@@ -35,7 +25,10 @@ function Nav({ id }) {
         >
           work
         </Link>
-        <a href="https://www.docdroid.net/ZcPFfXk/full-stack-resume-pdf" target="_blank">
+        <a
+          href="https://www.docdroid.net/Lblbuu3/full-stack-pdf"
+          target="_blank"
+        >
           resume
         </a>
         <a href="http://www.linkedin.com/in/vasilya-nizamova" target="_blank">
@@ -44,7 +37,13 @@ function Nav({ id }) {
         <a href="https://github.com/vasynizami" target="_blank">
           github
         </a>
-        <a href="mailto:vasilya.nizami@gmail.com" target="_blank" rel="noopener noreferrer">e-mail</a>
+        <a
+          href="mailto:vasilya.nizami@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          e-mail
+        </a>
       </div>
     </div>
   );
