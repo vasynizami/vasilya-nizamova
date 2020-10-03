@@ -262,9 +262,9 @@ button {
 }
 
 @media (max-width: 415px) {
-  .app {
+  /* .app {
     padding-bottom: 60px;
-  }
+  } */
   .intro {
     display: none;
   }
@@ -287,11 +287,11 @@ button {
     margin-left: 25px;
     font-size: 18px;
   }
-  .about {
+  /* .about {
     margin-top: -70px;
-  }
+  } */
   #photo {
-    max-width: 200px;
+    max-width: 180px;
   }
   .about p {
     font-size: 18px;
@@ -301,7 +301,7 @@ button {
   }
   .title, 
   .portfolio {
-    height: auto;
+    height: 100%;
   }
   .portfolio {
     margin-top: -100px;
