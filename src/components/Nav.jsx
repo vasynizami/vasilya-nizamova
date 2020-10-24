@@ -26,7 +26,7 @@ function Nav({ id }) {
           work
         </Link>
         <a
-          href="https://www.docdroid.net/ea1JzSe/fullstack-ny-pdf"
+          href="https://drive.google.com/file/d/1C3XiljjhZfiFX6qp0IAFgg4XMJcK3JTL/view?usp=sharing"
           target="_blank"
         >
           resume
