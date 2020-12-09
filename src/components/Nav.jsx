@@ -26,7 +26,7 @@ function Nav({ id }) {
           work
         </Link>
         <a
-          href="https://drive.google.com/file/d/1C3XiljjhZfiFX6qp0IAFgg4XMJcK3JTL/view?usp=sharing"
+          href="https://drive.google.com/file/d/1FF-uj0Gaztc9YYNMvs1uLSG35sqHNh3B/view?usp=sharing"
           target="_blank"
         >
           resume
