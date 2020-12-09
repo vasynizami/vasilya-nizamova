@@ -6,8 +6,8 @@ function About() {
     <div className="about">
       <div className="bio">
         <p>
-          Hi! I'm Vasilya, a NYC-based full-stack developer with a
-          knack for visual aesthetics. I focus on creating intuitive web apps with real users in mind.
+          Hi! I'm Vasilya, a NYC-based Software Engineer with a
+          knack for visual aesthetics. I focus on creating visually intuitive web apps with real users in mind.
         </p>
         <h4>
           Technologies I use: 
