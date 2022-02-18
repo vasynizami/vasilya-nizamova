@@ -18,7 +18,7 @@ function Title() {
       </div>
       <div className="intro">
         <img src={Logo} alt="logo" id="logo" />
-        <p>vasilya nizamova | full-stack developer</p>
+        <p>vasilya nizamova | software engineer</p>
       </div>
     </div>
   );

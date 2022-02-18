@@ -26,7 +26,7 @@ function Nav({ id }) {
           work
         </Link>
         <a
-          href="https://drive.google.com/file/d/1u8IVSsWslIOciAjhDsPQ242wYxyu6FBV/view"
+          href="https://drive.google.com/file/d/1E6ZYpC3R8jdh7JdFROEwy1Tnw3LSx-K_/view?usp=sharing"
           target="_blank"
         >
           resume
@@ -34,13 +34,13 @@ function Nav({ id }) {
         <a href="http://www.linkedin.com/in/vasilya-nizamova" target="_blank">
           linkedin
         </a>
-        <a href="https://github.com/vasynizami" target="_blank">
+        <a href="https://github.com/vasilyaNizamova" target="_blank">
           github
         </a>
         <a
           href="mailto:vasilya.nizami@gmail.com"
           target="_blank"
-          rel="noopener noreferrer"
+          // rel="noopener noreferrer"
         >
           e-mail
         </a>

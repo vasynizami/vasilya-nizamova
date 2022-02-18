@@ -52,7 +52,7 @@ const DropDownNav = ({ open }) => {
         work
       </Link>
       <a
-        href="https://docdro.id/jpzcvsT"
+        href="https://drive.google.com/file/d/17XpVtXy_671Q1Uytcx5V-94ONj-Lx1Yr/view?usp=sharing"
         target="_blank"
       >
         resume

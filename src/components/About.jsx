@@ -7,13 +7,13 @@ function About() {
       <div className="bio">
         <p>
           Hi! I'm Vasilya, a NYC-based Software Engineer with a
-          knack for visual aesthetics. I focus on creating visually intuitive web apps with real users in mind.
+          knack for quality assurance. I focus on bringing strong attention to detail and quality control to the products I work on.
         </p>
         <h4>
           Technologies I use: 
         </h4>
         <p style={{fontSize: "18px", marginTop: "20px"}}>
-          HTML, CSS, Bootstrap, JavaScript, ReactJS, MongoDB, Express, Mongoose, PostgreSQL, Ruby, Ruby on Rails
+          HTML, CSS, JavaScript, TypeScript, jQuery, ReactJS, React Bootstrap, Redux, AngularJS, Cypress, WebdriverIO, Selenium, Jest, Chai, Mocha, MongoDB, Mongoose, Express, NodeJS, MySQL, Ruby, Ruby on Rails
         </p>
       </div>
         <img id="photo" src={Photo}></img>
