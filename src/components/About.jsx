@@ -13,7 +13,7 @@ function About() {
           Technologies I use: 
         </h4>
         <p style={{fontSize: "18px", marginTop: "20px"}}>
-          HTML, CSS, JavaScript, TypeScript, jQuery, ReactJS, React Bootstrap, Redux, AngularJS, Cypress, WebdriverIO, Selenium, Jest, Chai, Mocha, MongoDB, Mongoose, Express, NodeJS, MySQL, Ruby, Ruby on Rails
+          HTML, CSS, Bootstrap, Sass, JavaScript, TypeScript, jQuery, ReactJS, React Bootstrap, Redux, AngularJS, Cypress, WebdriverIO, Selenium, Jest, Chai, Mocha, MongoDB, Mongoose, Express, NodeJS, MySQL, Ruby, Ruby on Rails
         </p>
       </div>
         <img id="photo" src={Photo}></img>
